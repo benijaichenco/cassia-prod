@@ -12,3 +12,5 @@ Whether it's a note that sparks a memory or a fragrance that captures a mood, I 
   FRONTEND: Vite, React, TypeScript, React-Router-Dom, Axios, Framer-Motion, Lenis.
 
   BACKEND: Nodejs, Express, Mongoose, Axios, Jsonwebtoken, Nodemailer, Bcrypt.
+
+Live: https://cassia-prod-client.vercel.app/
