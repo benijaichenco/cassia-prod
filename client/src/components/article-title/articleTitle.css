@@ -1,0 +1,6 @@
+.article-title {
+  font-size: var(--article-title-font-size);
+  font-weight: var(--article-title-font-weight);
+  letter-spacing: var(--ms-spacing);
+  text-align: center;
+}

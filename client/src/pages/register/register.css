@@ -1,0 +1,27 @@
+#register-section {
+  padding-top: calc(var(--navbar-height) + 4rem);
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.register-form-input-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.register-error-text-wrapper:empty {
+  display: none;
+}
+
+.register-confirmation-text {
+  padding: 1rem;
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 400;
+  color: var(--primary);
+}

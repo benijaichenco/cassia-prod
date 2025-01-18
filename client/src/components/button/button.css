@@ -1,0 +1,16 @@
+.button {
+  font-family: var(--text-font);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: var(--ms-spacing);
+  text-align: center;
+  padding: 1rem 1.5rem;
+  color: var(--primary);
+  background-color: var(--bg);
+  border: none;
+  outline: none;
+}
+
+.button:disabled {
+  background-color: var(--disabled);
+}

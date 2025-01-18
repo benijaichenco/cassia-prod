@@ -1,0 +1,9 @@
+#cursor {
+  position: fixed;
+  border-radius: 50%;
+  background-color: var(--cursor);
+  opacity: 0.8;
+  pointer-events: none;
+  transform-origin: center;
+  z-index: 999999;
+}

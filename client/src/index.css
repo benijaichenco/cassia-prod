@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --primary: #1c1c1c;
+  --primary-g: #333132;
+  --secondary: #6e6e6e;
+  --disabled: #b1b1b1;
+  --bg: #ffffff;
+  --bg-m: #e5e5e5;
+  --lighter: #f0f0f0;
+  --error: #a32a2a;
+  --success: #3f952a;
+  --cursor: #d3b34a;
+
+  --fd-font: "Playfair Display", serif;
+  --ms-font: "Montserrat", sans-serif;
+  --article-title-font-size: 2.5rem;
+  --paragraph-font-size: 1rem;
+  --article-title-font-weight: 300;
+  --paragraph-font-weight: 300;
+
+  --navbar-height: 3rem;
+
+  --fd-spacing: 2.5rem;
+  --ms-spacing: 0.3rem;
+  --paragraph-spacing: 0.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ms-font);
+  cursor: none;
+  border-radius: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100dvh;
+  width: 100%;
+}
+
+#root {
+  min-height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    cursor: default;
+  }
+
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 12px;
+  }
+}

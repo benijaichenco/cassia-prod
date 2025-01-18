@@ -1,0 +1,9 @@
+#liked-fragrances-section {
+  min-height: 100dvh;
+  margin-top: calc(var(--navbar-height) + 4rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+  gap: 4rem;
+}

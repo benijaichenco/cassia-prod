@@ -1,0 +1,88 @@
+.fragrance-card {
+  position: relative;
+  border: 1px solid var(--primary);
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  width: 20rem;
+}
+
+.fragrance-card-votes-container {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fragrance-card-vote-btn {
+  background: none;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fragrance-card-upvote-svg {
+  color: var(--success);
+}
+
+.fragrance-card-downvote-svg {
+  color: var(--error);
+}
+
+.fragrance-card-upvote-svg,
+.fragrance-card-downvote-svg {
+  height: 1rem;
+  width: auto;
+}
+
+.liked .fragrance-card-upvote-svg-bg {
+  fill: var(--success);
+}
+
+.disliked .fragrance-card-downvote-svg-bg {
+  fill: var(--error);
+}
+
+.fragrance-card-upvote-num,
+.fragrance-card-downvote-num {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.fragrance-card-img {
+  height: 15rem;
+  width: auto;
+}
+
+.fragrance-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fragrance-card-name {
+  text-align: center;
+  font-family: var(--fd-font);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.fragrance-card-brand,
+.fragrance-card-concentration,
+.fragrance-card-year {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--primary);
+}

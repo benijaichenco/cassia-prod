@@ -1,0 +1,6 @@
+.paragraph-text {
+  font-size: var(--paragraph-font-size);
+  font-weight: var(--paragraph-font-weight);
+  letter-spacing: var(--paragraph-spacing);
+  text-align: center;
+}

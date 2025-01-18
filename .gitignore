@@ -1,0 +1,35 @@
+
+
+# Ignore node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Ignore build directories
+client/build/
+server/dist/
+
+# Ignore logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variables and sensitive files
+.env
+client/.env
+server/.env
+
+# Ignore lock files (optional)
+package-lock.json
+yarn.lock
+
+# Ignore miscellaneous files
+.idea/
+.vscode/
+*.swp

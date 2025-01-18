@@ -1,0 +1,19 @@
+#main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#noise-overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: url("./assets/images/noise.png");
+  background-size: auto;
+  z-index: 999999;
+  opacity: 0.6;
+  filter: grayscale(100%);
+}

@@ -1,0 +1,33 @@
+#not-found {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.not-found-header {
+  line-height: 1;
+  font-size: 15rem;
+  font-weight: 200;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.not-found-title {
+  line-height: 1;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.not-found-text {
+  line-height: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--secondary);
+  margin-top: 1rem;
+}

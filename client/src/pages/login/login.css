@@ -1,0 +1,8 @@
+#login-section {
+  padding-top: calc(var(--navbar-height) + 4rem);
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}

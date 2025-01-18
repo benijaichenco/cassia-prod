@@ -1,0 +1,9 @@
+.form-error-text {
+  font-family: var(--text-font);
+  font-size: 0.7rem;
+  color: var(--error);
+}
+
+.form-error-text:empty {
+  display: none;
+}

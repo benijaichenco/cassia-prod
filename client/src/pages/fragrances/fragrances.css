@@ -1,0 +1,99 @@
+#fragrances {
+  padding: 5rem 0;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  min-height: 100dvh;
+}
+
+.fragrances-title {
+  color: var(--primary);
+}
+
+.fragrances-text {
+  color: var(--primary);
+  max-width: 60rem;
+  padding: 0 1rem;
+}
+
+.fragrances-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fragrances-search-svg {
+  color: var(--secondary);
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+.fragrances-search input {
+  padding: 0.5rem 1rem;
+  min-width: 25rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary);
+  border: none;
+  border-bottom: 1px solid var(--primary);
+  outline: none;
+  text-align: center;
+}
+
+.fragrances-search input::placeholder {
+  color: var(--disabled);
+}
+
+.fragrances-filters {
+  height: 2rem;
+  width: 100%;
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+.fragrances-filters-left {
+  display: flex;
+  gap: 2rem;
+}
+
+.fragrances-filter-btn {
+  background: none;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.fragrances-filter-btn.active {
+  font-weight: 600;
+}
+
+.fragrances-sort-svg.rotated {
+  transform: scaleY(-1);
+}
+
+@media screen and (max-width: 768px) {
+  .fragrances-filters {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 0 10rem;
+    gap: 1rem;
+  }
+}
