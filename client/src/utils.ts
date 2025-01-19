@@ -6,19 +6,29 @@ import { useAuthContext } from "./context/AuthContext";
 
 export function getTimeCreated(time: Date) {
   const date = new Date(time);
-  const formattedDate = new Intl.DateTimeFormat("en-US", {
-    month: "short",
-    day: "2-digit",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false,
-  }).format(date);
 
-  const parts = formattedDate.split(", ");
-  const updatedDate = `${parts[0]}, ${parts[1]} • ${parts[2]}`;
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
 
-  return updatedDate;
+  const month = months[date.getMonth()];
+  const day = String(date.getDate()).padStart(2, "0");
+  const year = date.getFullYear();
+  const hours = String(date.getHours()).padStart(2, "0");
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+
+  return `${month} ${day}, ${year} • ${hours}:${minutes}`;
 }
 
 export const useLenisScrollTo = () => {
