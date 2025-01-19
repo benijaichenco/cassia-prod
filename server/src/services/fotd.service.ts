@@ -25,6 +25,7 @@ export const resetFotd = async () => {
       fotd.fragrance = fragrance[0]._id;
       fotd.title = desc.title;
       fotd.text = desc.text;
+      fotd.lastReset = Date.now();
       await fotd.save();
       console.log("Fotd was reset.");
       return;
