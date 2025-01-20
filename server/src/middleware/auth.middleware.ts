@@ -25,7 +25,7 @@ export const authMiddleware = async (
     req.user = userData as UserDataType;
     const userSession = await ActiveUsersSessionModel.findOne({ userId: req.user.userId });
     if (userSession.session.at !== token) {
-      res.status(401).send("Token is invalid!");
+      res.status(403).send("Token is invalid!");
       return;
     }
     if (userSession && userSession.session) {

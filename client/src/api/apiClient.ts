@@ -35,6 +35,13 @@ authApi.interceptors.response.use(
     return res;
   },
   async (error: AxiosError) => {
+    if (error.status == 403) {
+      window.localStorage.removeItem("at");
+      window.localStorage.removeItem("rt");
+      window.localStorage.removeItem("isLoggedIn");
+      window.location.pathname = "/login";
+      return;
+    }
     if (error.status == 401) {
       const oldAt = window.localStorage.getItem("at");
       const rt = window.localStorage.getItem("rt");
@@ -65,6 +72,7 @@ authApi.interceptors.response.use(
         console.error("There was a problem refreshing a token:", err);
       }
       logout();
+      return;
     }
   }
 );
